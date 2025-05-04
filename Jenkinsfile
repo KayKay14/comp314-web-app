@@ -14,7 +14,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh 'docker rm -f my-web-app || true'
-                sh 'docker run -d --name my-web-app -p 3000:3000 my-web-app:${BUILD_NUMBER}'
+                sh 'docker run -d --name my-web-app -p 3000:80 my-web-app:${BUILD_NUMBER}'
             }
         }
     }

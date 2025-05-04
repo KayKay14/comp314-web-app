@@ -1,3 +1,0 @@
-# No Python dependencies required for static Nginx-hosted webpage 
-
-
